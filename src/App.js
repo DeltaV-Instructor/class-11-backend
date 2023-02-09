@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   getCats = async () => {
-    console.log('did we get here???');
+    // console.log(SERVER);
     try {
       let results = await axios.get(`${SERVER}/cats`);
         console.log('results from api', results);
